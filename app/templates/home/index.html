@@ -1,0 +1,377 @@
+<html>
+<head>
+  <!-- META DATA -->
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by HTML5XCSS3 dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="#">
+
+	<title>Joker</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}"  type="text/css">
+
+	<!-- Owl Carousel Assets -->
+    <link href="{{ url_for('static',filename='owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
+
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+	<!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='font-awesome-4.4.0/css/font-awesome.min.css')}}"  type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="{{ url_for('static',filename='js/html5shiv.js')}}"></script>
+        <script src="{{ url_for('static',filename='js/respond.min.js')}}"></script>
+    <![endif]-->
+
+</head>
+
+ <body class="index-page">
+
+	<!-- /////////////////////////////////////////Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">JOKER</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+					<li>
+                        <a class="page-scroll" href="{{ url_for('home.index')}}">Home</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="{{ url_for('home.blog')}}">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{ url_for('home.single')}}">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{ url_for('home.contact')}}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<!-- Navigation -->
+
+	<!-- CAROUSEL -->
+	<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" data-interval="4000">
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="{{ url_for('static',filename='images/20.jpg')}}" alt="...">
+				<!-- Static Header -->
+				<div class="container">
+				<div class="header-text hidden-xs">
+					<div class="col-md-12 text-center">
+						<h1>why so serious</h1>
+						<hr>
+						<p>Joker</p>
+						<a href="" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+					</div>
+				</div><!-- /header-text -->
+				</div>
+			</div>
+			<div class="item">
+				<img src="{{ url_for('static',filename='images/20.jpg')}}" alt="...">
+				<!-- Static Header -->
+				<div class="header-text hidden-xs">
+					<div class="col-md-12 text-center">
+						<h1>why so serious</h1>
+						<hr>
+						<p>Joker</p>
+						<a href="" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+					</div>
+				</div><!-- /header-text -->
+			</div>
+
+		</div>
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div> <!-- Carousel -->
+
+	<header class="container">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="index.html">
+					<span>JOKER</span>
+				</a>
+			</h1>
+			<h2 class="site-description">Welcome to Us !</h2>
+		</div>
+		<div class="social-links">
+			<ul class="list-inline">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+				<li><a href="#"><i class="fa fa-rss"></i></a></li>
+			</ul>
+		</div>
+	</header>
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+
+		<!-- ////////////Content Box 01 -->
+		<section class="box-content box-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/21.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>蝙蝠侠:黑暗骑士</h3>
+								<p>从亲眼目睹父母被人杀死的阴影中走出来的蝙蝠侠（克里斯蒂安·贝尔 饰），经历了成长之后，已经不再是那个桀骜不驯的孤单英雄。在警官吉姆·戈登（加里·奥德曼 饰）和检查官哈维·登特（阿伦·伊克哈特 饰）的通力帮助下，蝙蝠侠无后顾之忧地继续满世界的奔波，与日益增长起来的犯罪威胁做着永无休止的争斗，而他所在的哥谭市，也是进展最为明显的地方，犯罪率以一种惊人的速度持续下降着，毕竟对方是能够上天入地的蝙蝠侠，不借两个胆子谁还敢造次呢？不过像哥谭市这种科技与污秽并存的城市，平静是不可能维持太久的。果不其然，新一轮的混乱很快就席卷了整个城市，人们再一次被恐慌所笼罩着，而声称愿意为这一切负责的自然就是所有混乱的源头以及支配者——“小丑”（希斯·莱杰 饰）。</p>
+								<a href="http://list.youku.com/show/id_ze260d9008cc411e0a046.html?spm=a2h0k.8191407.0.0">播放</a>
+								<br><br>
+								<span>Jan 16, 2018 BY Mr.c</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/zhizhuxia.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>超凡蜘蛛侠2</h3>
+								<p>能力越大，责任越大。蜘蛛侠彼得·帕克（安德鲁·加菲尔德 饰）在全力和犯罪、灾难做斗争的同时，终于迎来了毕业的时刻。可是曾经的一段心结，让他和女友格温·史黛西（艾玛·斯通 饰）的关系降至冰点。格温应聘于为全城提供电力的奥斯本集团公司，同一期间发生的两件事，不由得左右这家公司和彼得等人的命运。奥斯本的掌门人病故，他的儿子哈利（戴恩·德哈恩 饰）以20岁的年龄接受这家市值2000亿美元的巨无霸。另一方面，极度崇拜蜘蛛侠的电力工程师迈克斯·狄龙（杰米·福克斯 饰）在维修机组时意外身亡，当他再度醒来时发现自己变成了全身充满电能的超人类。 　　感到受了欺骗的迈克斯与蜘蛛侠在时代广场展开对决，而彼得和哈利的友情也将遭到命运的戏弄……</p>
+								<a href="http://www.soku.com/search_video/q_%E8%B6%85%E5%87%A1%E8%9C%98%E8%9B%9B%E4%BE%A02?f=1&kb=04114040kv41000__%E8%B6%85%E5%87%A1zhu%27zhu">播放</a>
+								<br><br>
+								<span>Jan 16, 2018 BY Mr.c</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/2.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>Brainstorming Wedding Ideas</h3>
+								<p>Suspendisse porttitor. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus. Duis euismod lorem turpis, viverra feugiat ipsum volutpat vitae. Fusce justo turpis, sodales sed placerat non, suscipit at diam.</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>Jan 16, 2018 BY Mr.c</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/huxiao.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>虎啸龙吟</h3>
+								<p>该剧延续了《大军师司马懿之军师联盟》的精彩剧情，从司马懿戎装佩剑意气风发，到诸葛亮手持白鹤羽扇挥斥方遒，开启了新的一场场后三国精彩对战。昼夜兼程征孟达、空城计、高平陵事件，以及司马懿与第二代魏帝曹叡的关系都将在剧中娓娓道来。司马懿的身份会变为“托孤重臣”，进一步走入曹叡、曹芳时代的政治权利中枢，并遇到人生中最大的对手诸葛亮。</p>
+								<a href="http://list.youku.com/show/id_zefbfbd61237fefbfbdef.html?spm=a2hww.20027244.search.4">播放</a>
+								<br><br>
+								<span>Jan 16, 2018 BY Mr.c</span><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/who.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>who am i:没有绝对安全的系统</h3>
+								<p>简介： 本杰明是一个这样的人：三次元现实世界中，他是一个十足的屌丝&Loser，难以找到存在感，没有时尚感、没有朋友，也没有女朋友。但是二十五岁的他却是一个的电脑极客，拥有对数字技术不可思议的天赋。而影片中另一位主人公马克思是一个渴望“黑客世界”的潜在革命者，他注意到了本杰明在 网络方面的惊人才华，马克思、本杰明和神童斯蒂芬以及保罗私人组建了黑客组织CLAY，并且为了正义入侵国际安全系统。他们凭借高超黑客技术的所为引起了德国秘密警察组织、欧洲刑警组织的重视，并且一个邪恶... 详情
+本杰明是一个这样的人：三次元现实世界中，他是一个十足的屌丝&Loser，难以找到存在感，没有时尚感、没有朋友，也没有女朋友。但是二十五岁的他却是一个的电脑极客，拥有对数字技术不可思议的天赋。而影片中另一位主人公马克思是一个渴望“黑客世界”的潜在革命者，他注意到了本杰明在 网络方面的惊人才华，马克思、本杰明和神童斯蒂芬以及保罗私人组建了黑客组织CLAY，并且为了正义入侵国际安全系统。他们凭借高超黑客技术的所为引起了德国秘密警察组织、欧洲刑警组织的重视，并且一个邪恶的黑客将他们视作威胁，想要将他们除去。本杰明因此感觉到自己正在面临生死攸关的考验，并且他们的目标似乎不值得他付出如此大的代价……</p>
+								<a href="http://www.le.com/movie/10018815.html">播放...</a>
+								<br><br>
+								<span>Jan 16, 2018 BY Mr.c</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/shejiao.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>社交网络</h3>
+								<p>Class aptent taciti urna bibendum id. Duis a commodo lectus. Morbi id purus nec purus feugiat vestibulum. Suspendisse sapien ante, bibendum ac quam quis, imperdiet bibendum sem. Curabitur nibh magna, tristique et convallis…</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/jobs.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>乔布斯</h3>
+								<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi.</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/11.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>She Said Yes!</h3>
+								<p>Nunc eu velit metus. Donec in massa libero. Donec bibendum orci a lorem scelerisque luctus. Aliquam et ante quis erat semper pretium. Pellentesque vehicula.</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/5.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>Choosing The Bridesmaids and Groomsmen</h3>
+								<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi.</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/12.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>She Said Yes!</h3>
+								<p>Nunc eu velit metus. Donec in massa libero. Donec bibendum orci a lorem scelerisque luctus. Aliquam et ante quis erat semper pretium. Pellentesque vehicula.</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/6.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>A Sweet Escape to Paris</h3>
+								<p>Proin lobortis mattis odio non ornare. Sed tempor nisi eu hendrerit luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostravelit id sem tincidunt convallis ac eget quam. Vestibulum posuere porttitor sapien .</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+						<div class="box-item">
+							<img src="{{ url_for('static',filename='images/7.jpg')}}" class="img-responsive"/>
+							<div class="content">
+								<h3>Met Dovey’s Parents in Chicago</h3>
+								<p>Class aptent taciti urna bibendum id. Duis a commodo lectus. Morbi id purus nec purus feugiat vestibulum. Suspendisse sapien ante, bibendum ac quam quis, imperdiet bibendum sem. Curabitur nibh magna, tristique et convallis…</p>
+								<a href="home/single.html">Read More...</a>
+								<br><br>
+								<span>MAY 21, 2014 BY VAFPRESS</span><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-footer col-md-3">
+						<h2 class="footer-title">About Us</h2>
+						<div class="textwidget">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. <br> <br>
+						Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</div>
+					</div>
+					<div class="col-footer col-md-3 widget_recent_entries">
+						<h2 class="footer-title">Recent Posts</h2>
+						<ul>
+							<li><a href="#">MOST VISITED COUNTRIES</a></li>
+							<li><a href="#">5 PLACES THAT MAKE A GREAT HOLIDAY</a></li>
+							<li><a href="#">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY</a></li>
+							<li><a href="#">STARTUP COMPANY&#8217;S CO-FOUNDER TALKS ON HIS NEW PRODUCT</a></li>
+						</ul>
+					</div>
+					<div class="col-footer col-md-3">
+						<h2 class="footer-title">NEWS LETTER</h2>
+						If you want to receive our latest news send directly to your email, please leave your email address bellow. Subscription is free and you can cancel anytime.
+						<form action="#" method="post">
+							<input type="text" name="your-name" value="" size="40" placeholder="Your Email" />
+							<input type="submit" value="SUBSCRIBE" class="btn btn-skin" />
+						</form>
+					</div>
+					<div class="col-footer col-md-3">
+						<h2 class="footer-title">Tags</h2>
+						<div class="footer-tags">
+							<a href="#">animals</a>
+							<a href="#">cooking</a>
+							<a href="#">countries</a>
+							<a href="#">city</a>
+							<a href="#">children</a>
+							<a href="#">home</a>
+							<a href="#">likes</a>
+							<a href="#">photo</a>
+							<a href="#">link</a>
+							<a href="#">law</a>
+							<a href="#">shopping</a>
+							<a href="#">skate</a>
+							<a href="#">scholl</a>
+							<a href="#">video</a>
+							<a href="#">travel</a>
+							<a href="#">images</a>
+							<a href="#">love</a>
+							<a href="#">lists</a>
+							<a href="#">makeup</a>
+							<a href="#">media</a>
+							<a href="#">password</a>
+							<a href="#">pagination</a>
+							<a href="#">wildlife</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<p>Copyright 20xx - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li><a href="#">Privacy Policy</a>
+							</li>
+							<li><a href="#">Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="{{ url_for('static',filename='js/jquery-2.1.1.js')}}"></script>
+	<script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="{{ url_for('static',filename='js/agency.js')}}"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="{{ url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+	<script src="{{ url_for('static',filename='js/classie.js')}}"></script>
+	<script src="{{ url_for('static',filename='js/cbpAnimatedHeader.js')}}"></script>
+
+</body>
+</html>
